@@ -1,0 +1,643 @@
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.slick-list:focus {
+  outline: none;
+}
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+.slick-track:after {
+  clear: both;
+}
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+[dir=rtl] .slick-slide {
+  float: right;
+}
+.slick-slide img {
+  display: block;
+}
+.slick-slide.slick-loading img {
+  display: none;
+}
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+.background {
+  margin: 0;
+  background-color: #121212;
+}
+.background .borderStyle1 {
+  margin-top: 5%;
+  float: left;
+  margin-left: 10%;
+  width: 20%;
+  height: 40%;
+  background-color: transparent;
+  border: #7E7E7E solid 2px;
+  transition: margin-top 1s;
+}
+.background .borderStyle1:hover {
+  margin-top: 4%;
+  transition: margin-top 1s;
+}
+.background .picture1 img {
+  margin-top: 5%;
+  width: 90%;
+  height: 41vh;
+}
+.background .picture1 {
+  display: flex;
+  justify-content: center;
+}
+.background .borderStyle2 {
+  margin-top: 5%;
+  float: left;
+  margin-left: 10%;
+  width: 20%;
+  height: 40%;
+  background-color: transparent;
+  border: #7E7E7E solid 2px;
+  transition: margin-top 1s;
+}
+.background .borderStyle2:hover {
+  margin-top: 4%;
+  transition: margin-top 1s;
+}
+.background .picture2 img {
+  margin-top: 5%;
+  width: 90%;
+  height: 41vh;
+}
+.background .picture2 {
+  display: flex;
+  justify-content: center;
+}
+.background .borderStyle3 {
+  margin-top: 5%;
+  float: left;
+  margin-left: 10%;
+  width: 20%;
+  height: 40%;
+  background-color: transparent;
+  border: #7E7E7E solid 2px;
+  transition: margin-top 1s;
+}
+.background .borderStyle3:hover {
+  margin-top: 4%;
+  transition: margin-top 1s;
+}
+.background .picture3 img {
+  margin-top: 5%;
+  width: 90%;
+  height: 41vh;
+}
+.background .picture3 {
+  display: flex;
+  justify-content: center;
+}
+
+.videoBackground {
+  margin: 0;
+  background-color: white;
+}
+.videoBackground .videoContainer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+.videoBackground .videoContainer video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.videoBackground .orderContainer h1 {
+  color: #FF5F1F;
+  text-align: center;
+  margin-top: 5%;
+  font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.videoBackground .orderContainer h2 {
+  color: #FF5F1F;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  margin-top: 5%;
+}
+.videoBackground hr.solid {
+  border-top: 1px solid #1F1F1F;
+  border-bottom: 1px solid #1F1F1F;
+  border-right: 1px solid #1F1F1F;
+  border-left: 1px solid #1F1F1F;
+  background-color: #1F1F1F;
+  width: 95%;
+}
+.videoBackground .orderContainer {
+  background-color: rgba(18, 18, 18, 0.9);
+  width: 40%;
+  height: 80%;
+  border-radius: 10px;
+  float: left;
+  margin-top: 5%;
+  margin-left: 3%;
+}
+.videoBackground .orderContainer .dropDownButton {
+  color: #121212;
+  float: right;
+  margin-right: 20%;
+  margin-top: 15%;
+}
+.videoBackground .orderContainer .dropDownButton select {
+  background-color: #1F1F1F;
+  color: #FF5F1F;
+  border-radius: 5px;
+  width: 23vh;
+  height: 10%;
+  border: solid 1px #FF5F1F;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.videoBackground .orderContainer .dropDownButton2 {
+  float: left;
+  margin-left: 20%;
+  margin-top: 15%;
+  color: #121212;
+}
+.videoBackground .orderContainer .dropDownButton2 select {
+  background-color: #1F1F1F;
+  color: #FF5F1F;
+  border-radius: 5px;
+  width: 23vh;
+  height: 10%;
+  border: solid 1px #FF5F1F;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.videoBackground .orderContainer .orderSumbit input {
+  background-color: #1F1F1F;
+  color: #FF5F1F;
+  border: solid 1px #FF5F1F;
+  border-radius: 5px;
+  width: 40%;
+  height: 10%;
+  margin-left: 30%;
+  margin-top: 20%;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.header {
+  width: 100%;
+  height: 10%;
+  background-color: #121212;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  z-index: 1;
+}
+
+.header a {
+  text-decoration: none;
+  color: #BEBEBE;
+  margin-left: 3.5%;
+  font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 13px;
+  display: inline-block;
+}
+
+.header a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #FF5F1F;
+  transition: width 0.5s;
+}
+
+.header a:hover::after {
+  width: 100%;
+}
+
+.header a:hover {
+  color: white;
+}
+
+#logo {
+  color: #BEBEBE;
+  margin-top: 2%;
+  margin-left: 2%;
+}
+
+#profile-button {
+  margin-top: 2%;
+  margin-right: 2%;
+  float: right;
+  font-size: 16px;
+  margin-left: 1%;
+}
+
+.infoPicture img {
+  margin-top: 3%;
+  width: 30%;
+  height: 60%;
+  float: left;
+}
+
+#profilepicture {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  float: right;
+  margin-top: 1%;
+}
+
+.infoText {
+  color: #BEBEBE;
+  text-align: center;
+  width: 40%;
+  font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.infoText h1 {
+  padding-bottom: 3%;
+  color: #DF00FE;
+  font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+#footer {
+  width: 100%;
+  height: 20%;
+  background-color: #1F1F1F;
+  margin-top: 100%;
+}
+
+#credits {
+  text-align: center;
+  color: #BEBEBE;
+  font-family: Trattatello, fantasy;
+  font-size: 17px;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: transparent;
+  color: #BEBEBE;
+  padding: 10px;
+  font-size: 13px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 3.5%;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1F1F1F;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #BEBEBE;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #1F1F1F;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #1F1F1F;
+}
+
+#insta {
+  height: 20%;
+  width: auto;
+}
+
+#img1 {
+  -webkit-animation: img 5s linear infinite;
+          animation: img 5s linear infinite;
+}
+
+#img2 {
+  -webkit-animation: img1 5s linear infinite;
+          animation: img1 5s linear infinite;
+}
+
+#img3 {
+  -webkit-animation: img2 5s linear infinite;
+          animation: img2 5s linear infinite;
+}
+
+@-webkit-keyframes img {
+  0% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(10vh);
+    opacity: 0;
+  }
+}
+
+@keyframes img {
+  0% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(10vh);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes img1 {
+  0% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-4vh);
+    opacity: 0;
+  }
+}
+@keyframes img1 {
+  0% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-4vh);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes img2 {
+  0% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-10vh);
+    opacity: 0;
+  }
+}
+@keyframes img2 {
+  0% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-10vh);
+    opacity: 0;
+  }
+}
+.banner {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 50%;
+  background-color: black;
+}
+
+.slick-slide img {
+  display: block;
+  height: 150%;
+  width: auto !important;
+  margin-left: 45%;
+}
+
+.bannerheader {
+  width: 100%;
+  height: 10%;
+  z-index: 12;
+  position: fixed;
+  transition-duration: 0.5s;
+}
+
+.bannerheader a {
+  text-decoration: none;
+  color: #BEBEBE;
+  margin-left: 3.5%;
+  font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 13px;
+  display: inline-block;
+}
+
+.bannerheader a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #FF5F1F;
+  transition: width 0.5s;
+}
+
+.bannerheader a:hover::after {
+  width: 100%;
+}
+
+.bannerheader a:hover {
+  color: white;
+}
+
+.scrolling-active {
+  background-color: #121212;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transition-duration: 0.5s;
+}
+
+.profileContainer {
+  width: 60%;
+  height: 122vh;
+  background-color: black;
+  margin-left: 20%;
+  z-index: -1;
+  opacity: 0.9;
+}
+.profileContainer .profileBorder {
+  width: 20%;
+  height: 37%;
+  background-color: transparent;
+  border: solid 2px #03DAC6;
+  margin-left: 5%;
+  margin-top: 10%;
+  position: absolute;
+  z-index: 0;
+}
+
+#profilePlaceholder {
+  width: 100%;
+  height: 100%;
+}
+
+#profile-name {
+  color: white;
+  position: absolute;
+  margin-top: 8%;
+  margin-left: 5%;
+}
+
+#profile-email {
+  color: white;
+  position: absolute;
+  margin-top: 15%;
+  margin-left: 35%;
+}
+
+.profile-background {
+  margin: 0;
+  background-color: #121212;
+  background-image: url("/assets/backgroundprofile.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#footerprofile {
+  width: 100%;
+  height: 20%;
+  background-color: black;
+  margin-top: 0%;
+}
