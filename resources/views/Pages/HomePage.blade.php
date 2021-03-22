@@ -7,7 +7,7 @@
     <title>HomePage BorderStyle</title>
 </head>
 <body class="background">
-@include('Widgets.BannerHeader')
+@include('layouts.BannerHeader')
 <div class="banner">
     <div class="images fade" >
         <img id="img1" src="{{asset('assets/csgo_bannerfoto1.png')}}" alt="x">
@@ -16,7 +16,7 @@
     </div>
 </div>
 @include('Widgets.PopularGames')
-@include('Widgets.Footer')
+@include('layouts.Footer')
 <script type="text/javascript" src={{asset('js/app.js')}}></script>
 </body>
 <script>

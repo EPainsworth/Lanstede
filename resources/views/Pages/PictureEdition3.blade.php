@@ -8,7 +8,7 @@
     <title>Edition3</title>
 </head>
 <body class="background">
-@include('Widgets.Header')
+@include('layouts.Header')
 </body>
 <script>
     $(document).ready(function(){

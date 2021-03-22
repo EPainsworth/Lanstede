@@ -8,7 +8,7 @@
     <title>ProfilePage</title>
 </head>
 <body class="profile-background">
-@include('Widgets.Header')
+@include('layouts.Header')
 <div class="profileContainer">
     <div class="profileBorder">
         <img id="profilePlaceholder" src="{{asset('assets/csgo_bannerfoto1.png')}}" alt="x">
@@ -20,7 +20,7 @@
         email
     </div>
 </div>
-@include('Widgets.FooterProfile')
+@include('layouts.FooterProfile')
 </body>
 <script>
     $(document).ready(function(){
