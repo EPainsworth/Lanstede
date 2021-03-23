@@ -8,7 +8,7 @@
     <title>AllGamesPage</title>
 </head>
 <body class="background">
-@include('layouts.Header')
+@include('Widgets.Header')
 </body>
 <script>
     $(document).ready(function(){

@@ -8,13 +8,13 @@
     <title>InfoPage</title>
 </head>
 <body class="background">
-@include('layouts.Header')
+@include('Widgets.Header')
 <div class="infoPicture">
     <img src="{{asset('assets/csgo_infopage.png')}}" alt="Error loading image">
 </div>
 <center>
 @include('Widgets.Info')
 </center>
-@include('layouts.Footer')
+@include('Widgets.Footer')
 </body>
 </html>
