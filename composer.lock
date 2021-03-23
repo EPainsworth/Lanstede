@@ -2424,9 +2424,6 @@
                 }
             ],
             "description": "Microsoft Azure OAuth2 Provider for Laravel Socialite",
-            "support": {
-                "source": "https://github.com/SocialiteProviders/Microsoft-Azure/tree/4.2.0"
-            },
             "time": "2020-12-01T23:10:59+00:00"
         },
         {
@@ -6824,6 +6821,5 @@
     "platform": {
         "php": "^7.3|^8.0"
     },
-    "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "platform-dev": []
 }
