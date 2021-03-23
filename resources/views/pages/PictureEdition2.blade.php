@@ -5,10 +5,14 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
-    <title>OrderPage</title>
+    <title>Edition2</title>
 </head>
-<body class="videoBackground">
-@include('Widgets.OrderVideo')
-@include('Widgets.Order')
+<body class="background">
+@include('layouts.header')
 </body>
+<script>
+    $(document).ready(function(){
+        $(window).scrollTop(0);
+    });
+</script>
 </html>

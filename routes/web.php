@@ -14,30 +14,30 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('Pages/HomePage');
+    return view('pages/HomePage');
 });
 
 Route::get('/infopage', function () {
-    return view('Pages/InformationPage');
+    return view('pages/InformationPage');
 });
 
 Route::get('/allgamespage', function () {
-    return view('Pages/AllGamesPage');
+    return view('pages/AllGamesPage');
 });
 Route::get('/profilepage', function () {
-    return view('Pages/ProfilePage');
+    return view('pages/ProfilePage');
 });
 Route::get('/orderpage', function () {
-    return view('Pages/OrderPage');
+    return view('pages/OrderPage');
 });
 Route::get('/edition1', function () {
-    return view('Pages/PictureEdition1');
+    return view('pages/PictureEdition1');
 });
 Route::get('/edition2', function () {
-    return view('Pages/PictureEdition2');
+    return view('pages/PictureEdition2');
 });
 Route::get('/edition3', function () {
-    return view('Pages/PictureEdition3');
+    return view('pages/PictureEdition3');
 });
 Route::get('/inloggen/azure', [\App\Http\Controllers\Auth\LoginController::class, 'redirectToProvider'])->name('login');
 Route::get('/inloggen/azure/callback', [\App\Http\Controllers\Auth\LoginController::class, 'handleProviderCallback']);
