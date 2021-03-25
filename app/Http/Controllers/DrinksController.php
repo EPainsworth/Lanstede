@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Drinks;
 use Illuminate\Http\Request;
 
 class DrinksController extends Controller
@@ -13,7 +14,9 @@ class DrinksController extends Controller
      */
     public function index()
     {
-        //
+        return view('widgets.order', [
+            'drinks' => Drinks::all()
+        ]);
     }
 
     /**

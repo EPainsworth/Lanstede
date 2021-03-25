@@ -13,7 +13,7 @@ class CreateGamesinschrijvingTable extends Migration
      */
     public function up()
     {
-        Schema::create('games inschrijving', function (Blueprint $table) {
+        Schema::create('gamesinschrijving', function (Blueprint $table) {
             $table->foreignId('game_id');
             $table->foreignId('student_id');
         });

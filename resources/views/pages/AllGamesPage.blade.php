@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <title>AllGamesPage</title>
 </head>
-<body class="background">
+<body>
 @include('layouts.header')
+
+@yield('content')
 </body>
 <script>
     $(document).ready(function(){

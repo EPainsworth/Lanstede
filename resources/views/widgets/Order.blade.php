@@ -6,8 +6,12 @@
     <div class="dropDownButton">
         <select>
             <option value="0" selected>Kies je eten:</option>
-            <option value="1">Frikandel</option>
-            <option value="2">Kroket</option>
+            @foreach($drinks as $drink)
+
+
+                <option value="{{$drink->drinks_id}}">{{$drink->drinks_name}}</option>
+
+            @endforeach
         </select>
     </div>
     <div class="dropDownButton2">
