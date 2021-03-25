@@ -14,12 +14,18 @@ class CreateGamesTable extends Migration
     public function up()
     {
         Schema::create('games', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
-            $table->longText('shortdesc');
-            $table->timestamps();
+            $table->id('game_id');
+            $table->string('game_titel');
+            $table->longText('picture_path');
+            $table->longText('game_shortdesc');
+            $table->longText('game_desc');
+            $table->longText('game_thumbnail');
+            $table->integer('player_qty');
         });
     }
+
+
+
 
     /**
      * Reverse the migrations.
