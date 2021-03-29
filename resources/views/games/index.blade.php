@@ -15,3 +15,20 @@
 
     @endforeach
 @endsection
+
+<div class="allgamesContainer">
+    <a href="profilepage">
+        <div class="gamedescborder">
+            <div class="allgameborder">
+                <img id="gamePlaceholder" src="{{asset('assets/CSGO-logo.jpg')}}" alt="x">
+            </div>
+            <div id="game-title">
+                naam input
+            </div>
+
+            <div id="gamedescription">
+                email
+            </div>
+        </div>
+    </a>
+</div>

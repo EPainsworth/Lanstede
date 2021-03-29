@@ -14,7 +14,7 @@ class DrinksController extends Controller
      */
     public function index()
     {
-        return view('widgets.order', [
+        return view('pages.orderpage', [
             'drinks' => Drinks::all()
         ]);
     }
