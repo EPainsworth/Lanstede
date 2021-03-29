@@ -4,7 +4,7 @@
 
         <a href="/" id="home-button">HOME</a>
 
-        <a href="allgamespage" id="allgames-button">ALLGAMES</a>
+        <a href="games" id="allgames-button">ALLGAMES</a>
 
         <div class="dropdown">
             <button class="dropbtn">PICTUREPAGE</button>

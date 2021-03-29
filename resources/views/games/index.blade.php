@@ -1,34 +1,29 @@
 @extends('pages.allgamespage')
 
 @section('content')
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-    hier komen onze games. poep
+    <link rel="stylesheet" href="{{asset('css/app.css')}}">
 
-    @foreach($games as $game)<br>
-        {{ $game->game_titel }}<br>
-        {{ $game->game_shortdesc }}<br>
 
-    @endforeach
-@endsection
+
 
 <div class="allgamesContainer">
-    <a href="profilepage">
+    @foreach($games as $game)
+    <a href="">
         <div class="gamedescborder">
             <div class="allgameborder">
-                <img id="gamePlaceholder" src="{{asset('assets/CSGO-logo.jpg')}}" alt="x">
-            </div>
-            <div id="game-title">
-                naam input
+                <img class="gamePlaceholder" src="{{ $game->picture_path }}" alt="x">
             </div>
 
-            <div id="gamedescription">
-                email
+            <div class="gamedescription">
+                <h6>
+                    {{ $game->game_titel }}
+                </h6>
+
+                {{ $game->game_shortdesc }}
             </div>
         </div>
     </a>
+    @endforeach
+
 </div>
+@endsection

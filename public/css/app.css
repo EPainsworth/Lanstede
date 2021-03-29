@@ -641,3 +641,45 @@ body::-webkit-scrollbar {
   background-color: black;
   margin-top: 0%;
 }
+
+.allgamesContainer {
+  width: 70%;
+  height: 122vh;
+  padding-top: 10rem;
+  background-color: black;
+  margin-left: 15%;
+  z-index: -1;
+  opacity: 0.9;
+}
+.allgamesContainer .allgameborder {
+  width: 19%;
+  height: 60%;
+  background-color: #1F1F1F;
+  border: solid 2px #03DAC6;
+  z-index: 0;
+}
+
+.gamePlaceholder {
+  width: 100%;
+  height: auto;
+}
+
+.gamedescription {
+  color: white;
+  margin-left: 2rem;
+}
+
+.gamedescborder {
+  display: flex;
+  flex-direction: row;
+  background-color: #1F1F1F;
+  border: solid 2px #03DAC6;
+  padding: 2rem;
+  transition: 2s;
+  margin-bottom: 4rem;
+}
+
+.gamedescborder:hover {
+  transition: 2s;
+  background-color: gray;
+}
