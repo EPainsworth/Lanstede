@@ -8,7 +8,7 @@
 
 <div class="allgamesContainer">
     @foreach($games as $game)
-    <a href="">
+    <a href="{{"detail/".$game['id']}}">
         <div class="gamesmainborder">
             <div class="allgameborder">
                 <img class="gamePlaceholder" src="{{ $game->path }}" alt="x">
