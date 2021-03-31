@@ -9,15 +9,16 @@
 <div class="allgamesContainer">
     @foreach($games as $game)
     <a href="">
-        <div class="gamedescborder">
+        <div class="gamesmainborder">
             <div class="allgameborder">
                 <img class="gamePlaceholder" src="{{ $game->picture_path }}" alt="x">
             </div>
 
             <div class="gamedescription">
-                <h6>
+
+                <h4>
                     {{ $game->game_titel }}
-                </h6>
+                </h4>
 
                 {{ $game->game_shortdesc }}
             </div>
