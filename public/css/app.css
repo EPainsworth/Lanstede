@@ -663,6 +663,7 @@ body::-webkit-scrollbar {
   border: solid 2px #03DAC6;
   z-index: 0;
   border-radius: 6px;
+  float: left;
 }
 
 .gamePlaceholder {
@@ -674,11 +675,12 @@ body::-webkit-scrollbar {
 .gamedescription {
   color: white;
   margin-left: 2rem;
+  float: left;
+  height: 30%;
+  width: 70%;
 }
 
 .gamesmainborder {
-  display: flex;
-  flex-direction: row;
   background-color: #1F1F1F;
   border: solid 2px #03DAC6;
   padding: 2rem;
@@ -688,6 +690,7 @@ body::-webkit-scrollbar {
   opacity: 0.9;
   border-radius: 3px;
   width: 91%;
+  height: 25%;
 }
 
 .gamesmainborder:hover {

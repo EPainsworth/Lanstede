@@ -11,16 +11,16 @@
     <a href="">
         <div class="gamesmainborder">
             <div class="allgameborder">
-                <img class="gamePlaceholder" src="{{ $game->picture_path }}" alt="x">
+                <img class="gamePlaceholder" src="{{ $game->path }}" alt="x">
             </div>
 
             <div class="gamedescription">
 
                 <h4>
-                    {{ $game->game_titel }}
+                    {{ $game->titel }}
                 </h4>
 
-                {{ $game->game_shortdesc }}
+                {{ $game->shortdesc }}
             </div>
         </div>
     </a>
