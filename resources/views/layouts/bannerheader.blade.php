@@ -20,7 +20,6 @@
         <a href="drinks" id="profile-button">PROFILE</a>
     </div>
 </header>
-
 <script>
     window.addEventListener('scroll', function () {
         let header = document.querySelector('header');

@@ -538,3 +538,96 @@ body::-webkit-scrollbar {
 .gamedescborder:hover{
     background-color: yellow;
 }
+.detailbanner{
+
+}
+.detailbanner img{
+    z-index: -1;
+    height: 30%;
+    background-size: contain;
+}
+.detailbanner .join_btn{
+    position: absolute;
+    top: 20%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: $joinButton;
+    color: $textColor;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+#pictureplace{
+  width: 100%;
+}
+.gamedetail {
+    width: 100%;
+    height: 66vh;
+    background-color: $backgroundColor;
+    z-index: 1;
+    opacity: 1;
+
+    .detailpictureBorder{
+        width: 20%;
+        height: 37%;
+        background-color:  $secondButtonColor;
+        border: solid 2px $accentColor;
+        margin-left: 5%;
+        margin-top: -8%;
+        position: absolute;
+        z-index: 0;
+        border-radius: 50%;
+    }
+}
+.detailborder{
+    background-color: black;
+    width: 60%;
+    margin-top: 5px;
+    margin-left: 20%;
+}
+
+#detailpicture {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    opacity: 1;
+}
+#detailside{
+    color: white;
+    position: absolute;
+    margin-top: 12%;
+    margin-left: 5%;
+    border: solid 2px $accentColor;
+    width: 20%;
+    height: 35%;
+}
+#detailmain{
+    color: white;
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 30%;
+    border: solid 2px $accentColor;
+    width: 40%;
+    height: 40%;
+}
+.profile-background{
+    margin: 0;
+    background-color: $backgroundColor;
+    background-image: url("/assets/backgroundprofile.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#footerdetails {
+    width: 100%;
+    height: 20%;
+    background-color: $backgroundColor;
+    margin-top: 0%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+}
+.detailpagebody{
+    margin: 0px;
+}
