@@ -17,7 +17,7 @@
 
         <a href="infopage" id="information-button">INFORMATION</a>
 
-        <a href="drinks" id="profile-button">PROFILE</a>
+        <a href="food" id="profile-button">PROFILE</a>
     </div>
 </header>
 

@@ -43,8 +43,7 @@ Route::get('/inloggen/azure', [\App\Http\Controllers\Auth\LoginController::class
 Route::get('/inloggen/azure/callback', [\App\Http\Controllers\Auth\LoginController::class, 'handleProviderCallback']);
 
 Route::resource('/games', \App\Http\Controllers\GamesController::class);
-Route::resource('/drinks', \App\Http\Controllers\FoodController::class);
-Route::resource('/drinks', \App\Http\Controllers\DrinksController::class);
+Route::resource('/food', \App\Http\Controllers\FoodController::class);
 
 
 
