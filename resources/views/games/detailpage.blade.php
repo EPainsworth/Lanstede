@@ -16,13 +16,14 @@
 </div>
 <div class="gamedetail">
     <div class="detailpictureBorder">
-        <img id="detailpicture" src="{{asset('assets/profiel_rust.jpg')}}" alt="x">
+        <img id="detailpicture" src="{{$data['path']}}" alt="x">
     </div>
     <div id="detailside">
-        game naam en basis info
+        {{$data['titel']}}
+
     </div>
     <div id="detailmain">
-        game description
+        {{$data['desc']}}
     </div>
 </div>
 @include('layouts.footerdetails')
