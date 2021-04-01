@@ -4,7 +4,7 @@
     <h2>CHOOSE YOUR FOOD</h2>
 <form method="GET" action="/">
     <div class="dropDownButton">
-        <select>
+        <select name="snack">
             <option value="0" selected>Choose your food:</option>
             @foreach($food as $foods)
 
@@ -15,7 +15,7 @@
         </select>
     </div>
     <div class="orderSumbit">
-        <input type="submit">
+        <input type="submit" name="Submit" >
     </div>
 </form>
 </div>
