@@ -22,5 +22,6 @@
 <div class="adminfood">
 </div>
 <div class="adminusers">
+    @yield('useremail')
 </div>
 </body>

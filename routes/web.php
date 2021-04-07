@@ -51,6 +51,7 @@ Route::get('edit/{id}', [\App\Http\Controllers\GamesController::class, 'edit']);
 Route::resource('/games', \App\Http\Controllers\GamesController::class);
 Route::resource('/information', \App\Http\Controllers\InformationController::class);
 Route::resource('/food', \App\Http\Controllers\FoodController::class);
+Route::resource('/admin', \App\Http\Controllers\Auth\LoginController::class);
 
 
 

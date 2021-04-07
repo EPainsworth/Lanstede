@@ -896,3 +896,15 @@ body::-webkit-scrollbar {
   margin-top: 3%;
   box-shadow: 0 4px 7px black;
 }
+
+.useremail h3 {
+  float: left;
+  color: #BEBEBE;
+  margin-left: 5%;
+}
+
+.userid h3 {
+  float: left;
+  color: #BEBEBE;
+  margin-left: 10%;
+}

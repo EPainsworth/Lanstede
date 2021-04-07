@@ -120,7 +120,6 @@ $borderColor: #7E7E7E;
         text-align: center;
         margin-top: 5%;
         font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-
     }
     .orderContainer h2 {
         color: $titelColor;
@@ -695,12 +694,14 @@ body::-webkit-scrollbar {
     border-right: 2px solid $secondButtonColor;
     float: left;
 }
+
 .admintitle h1{
     color: $headline;
     text-align: center;
     width: 100%;
     height: 5%;
 }
+
 .editinfo button {
     margin-top: 10%;
     margin-left: 15%;
@@ -710,9 +711,11 @@ body::-webkit-scrollbar {
     height: 15%;
     border-radius: 5px;
 }
+
 .editinfo h2 {
     color: $accentColor;
 }
+
 .editpicture button {
     margin-top: 10%;
     margin-left: 15%;
@@ -722,6 +725,7 @@ body::-webkit-scrollbar {
     height: 15%;
     border-radius: 5px;
 }
+
 .editpicture h2 {
     color: $accentColor;
 }
@@ -746,4 +750,14 @@ body::-webkit-scrollbar {
     margin-right: 5%;
     margin-top: 3%;
     box-shadow: 0 4px 7px rgba(0, 0, 0, 1);
+}
+.useremail h3 {
+    float: left;
+    color: $textColor;
+    margin-left: 5%;
+}
+.userid h3 {
+    float: left;
+    color: $textColor;
+    margin-left: 10%;
 }
