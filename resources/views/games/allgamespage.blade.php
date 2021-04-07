@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <title>AllGamesPage</title>
 </head>
-<body>
+<body class="allgames-background">
 @include('layouts.header')
 
 @yield('content')

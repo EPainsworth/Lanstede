@@ -48,7 +48,8 @@ class GamesController extends Controller
      */
     public function show($id)
     {
-        //
+        $data= Games::find($id);
+        return view('games/detailpage',['data'=>$data]);
     }
 
     /**
@@ -59,7 +60,7 @@ class GamesController extends Controller
      */
     public function edit($id)
     {
-        //
+
     }
 
     /**

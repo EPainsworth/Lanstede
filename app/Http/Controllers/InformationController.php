@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Drinks;
+use App\Models\Games;
+use App\Models\Information;
 use Illuminate\Http\Request;
 
-class DrinksController extends Controller
+class InformationController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +15,8 @@ class DrinksController extends Controller
      */
     public function index()
     {
-        return view('pages.orderpage', [
-            'drinks' => Drinks::all()
+        return view('Information.informationpage', [
+            'information' => Information::all()
         ]);
     }
 
@@ -48,7 +49,8 @@ class DrinksController extends Controller
      */
     public function show($id)
     {
-        //
+        $data= Information::find($id);
+        return view('information/informationpage',['data'=>$data]);
     }
 
     /**
@@ -59,7 +61,8 @@ class DrinksController extends Controller
      */
     public function edit($id)
     {
-        //
+        $data= Information::find($id);
+        return view('information/edit',['data'=>$data]);
     }
 
     /**

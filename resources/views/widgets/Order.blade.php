@@ -1,11 +1,11 @@
 <div class="orderContainer">
-    <h1>U BENT INGELOGD!</h1>
+    <h1>YOU ARE LOGGED IN!</h1>
     <hr class="solid">
-    <h2>KIES HIER UW ETEN EN DRINKEN</h2>
+    <h2>CHOOSE YOUR FOOD</h2>
 <form method="GET" action="/">
     <div class="dropDownButton">
-        <select>
-            <option value="0" selected>Kies je eten:</option>
+        <select name="snack">
+            <option value="0" selected>Choose your food:</option>
             @foreach($food as $foods)
 
 
@@ -14,19 +14,8 @@
             @endforeach
         </select>
     </div>
-    <div class="dropDownButton2">
-        <select>
-            <option value="0" selected>Kies je drankje:</option>
-            @foreach($drinks as $drink)
-
-
-                <option value="{{$drink->drinks_id}}">{{$drink->drinks_name}}</option>
-
-            @endforeach
-        </select>
-    </div>
     <div class="orderSumbit">
-        <input type="submit">
+        <input type="submit" name="Submit" >
     </div>
 </form>
 </div>

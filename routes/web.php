@@ -18,7 +18,7 @@ Route::get('/', function () {
 })->name('index');
 
 Route::get('/infopage', function () {
-    return view('pages/InformationPage');
+    return view('Information/InformationPage');
 });
 
 Route::get('/allgamespage', function () {
@@ -42,12 +42,19 @@ Route::get('/edition2', function () {
 Route::get('/edition3', function () {
     return view('pages/PictureEdition3');
 });
+Route::get('/adminpage', function () {
+    return view('admin/adminpage');
+});
 Route::get('/inloggen/azure', [\App\Http\Controllers\Auth\LoginController::class, 'redirectToProvider'])->name('login');
 Route::get('/inloggen/azure/callback', [\App\Http\Controllers\Auth\LoginController::class, 'handleProviderCallback']);
+Route::get('detail/{id}', [\App\Http\Controllers\GamesController::class, 'show']);
+Route::get('information/{id}', [\App\Http\Controllers\GamesController::class, 'show']);
+Route::get('edit/{id}', [\App\Http\Controllers\GamesController::class, 'edit']);
 
 Route::resource('/games', \App\Http\Controllers\GamesController::class);
-Route::resource('/drinks', \App\Http\Controllers\FoodController::class);
-Route::resource('/drinks', \App\Http\Controllers\DrinksController::class);
+Route::resource('/information', \App\Http\Controllers\InformationController::class);
+Route::resource('/food', \App\Http\Controllers\FoodController::class);
+
 
 
 

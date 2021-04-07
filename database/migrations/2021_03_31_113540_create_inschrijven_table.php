@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateGamesinschrijvingTable extends Migration
+class CreateInschrijvenTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,10 @@ class CreateGamesinschrijvingTable extends Migration
      */
     public function up()
     {
-        Schema::create('gamesinschrijving', function (Blueprint $table) {
-            $table->foreignId('game_id');
+        Schema::create('inschrijven', function (Blueprint $table) {
             $table->foreignId('id');
+            $table->foreignId('food_id');
+            $table->timestamps();
         });
     }
 
@@ -26,6 +27,6 @@ class CreateGamesinschrijvingTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('gamesinschrijving');
+        Schema::dropIfExists('inschrijven');
     }
 }

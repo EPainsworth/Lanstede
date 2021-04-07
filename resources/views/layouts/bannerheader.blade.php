@@ -4,7 +4,7 @@
 
         <a href="/" id="home-button">HOME</a>
 
-        <a href="allgamespage" id="allgames-button">ALLGAMES</a>
+        <a onclick="location.href='https://lanstede.test/games'" id="allgames-button">ALLGAMES</a>
 
         <div class="dropdown">
             <button class="dropbtn">PICTUREPAGE</button>
@@ -15,9 +15,12 @@
             </div>
         </div>
 
-        <a href="infopage" id="information-button">INFORMATION</a>
+        <a href="information" id="information-button">INFORMATION</a>
 
-        <a href="drinks" id="profile-button">PROFILE</a>
+
+        <a href="profilepage" id="profile-button">PROFILE</a>
+
+        <img src="{{asset('assets/profiel.jpg')}}" id="profilepicture">
     </div>
 </header>
 <script>

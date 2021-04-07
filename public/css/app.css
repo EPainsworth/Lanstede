@@ -336,8 +336,8 @@
 #footer {
   width: 100%;
   height: 20%;
-  background-color: #1F1F1F;
-  margin-top: 60%;
+  background-color: #141414;
+  margin-top: 35%;
 }
 
 #credits {
@@ -629,7 +629,7 @@ body::-webkit-scrollbar {
 
 .profile-background {
   margin: 0;
-  background-color: #121212;
+  background-color: black;
   background-image: url("/assets/backgroundprofile.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -642,6 +642,73 @@ body::-webkit-scrollbar {
   margin-top: 0%;
 }
 
+<<<<<<< HEAD
+=======
+.allgamesContainer a {
+  text-decoration: none;
+}
+
+.allgamesContainer {
+  width: 70%;
+  height: auto;
+  padding-top: 10rem;
+  padding-bottom: 2rem;
+  background-color: #1F1F1F;
+  margin-left: 15%;
+  opacity: 0.9;
+}
+
+.allgameborder {
+  width: 190px;
+  height: 210px;
+  background-color: #1F1F1F;
+  border: solid 2px #03DAC6;
+  z-index: 0;
+  border-radius: 6px;
+  float: left;
+}
+
+.gamePlaceholder {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+}
+
+.gamedescription {
+  color: white;
+  margin-left: 2rem;
+  float: left;
+  height: 30%;
+  width: 70%;
+}
+
+.gamesmainborder {
+  background-color: #1F1F1F;
+  border: solid 2px #03DAC6;
+  padding: 2rem;
+  transition: 2s;
+  margin-bottom: 4rem;
+  margin-left: 2%;
+  opacity: 1;
+  border-radius: 3px;
+  width: 91%;
+  height: 25%;
+  box-shadow: 0 4px 7px black;
+}
+
+.gamesmainborder:hover {
+  transition: 2s;
+  background-color: gray;
+}
+
+.allgames-background {
+  margin: 0;
+  background-color: #121212;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+>>>>>>> aa18d47c11c0fb464cc9575f7029b43514711123
 #gamePlaceholder {
   width: 100%;
   height: 100%;
@@ -755,6 +822,7 @@ body::-webkit-scrollbar {
   height: 40%;
 }
 
+<<<<<<< HEAD
 .profile-background {
   margin: 0;
   background-color: #121212;
@@ -763,6 +831,8 @@ body::-webkit-scrollbar {
   background-size: contain;
 }
 
+=======
+>>>>>>> aa18d47c11c0fb464cc9575f7029b43514711123
 #footerdetails {
   width: 100%;
   height: 20%;
@@ -774,3 +844,72 @@ body::-webkit-scrollbar {
 .detailpagebody {
   margin: 0px;
 }
+<<<<<<< HEAD
+=======
+
+.admindivider {
+  margin-top: 1%;
+  padding-top: 5%;
+  height: 85%;
+  width: 50%;
+  border-right: 2px solid #1F1F1F;
+  float: left;
+}
+
+.admintitle h1 {
+  color: #DF00FE;
+  text-align: center;
+  width: 100%;
+  height: 5%;
+}
+
+.editinfo button {
+  margin-top: 10%;
+  margin-left: 15%;
+  border: 1px solid #03DAC6;
+  background-color: #1F1F1F;
+  width: 70%;
+  height: 15%;
+  border-radius: 5px;
+}
+
+.editinfo h2 {
+  color: #03DAC6;
+}
+
+.editpicture button {
+  margin-top: 10%;
+  margin-left: 15%;
+  border: 1px solid #03DAC6;
+  background-color: #1F1F1F;
+  width: 70%;
+  height: 15%;
+  border-radius: 5px;
+}
+
+.editpicture h2 {
+  color: #03DAC6;
+}
+
+.adminfood {
+  float: right;
+  width: 35%;
+  height: 30%;
+  background-color: #1F1F1F;
+  border-radius: 5px;
+  margin-right: 5%;
+  margin-top: 5%;
+  box-shadow: 0 4px 7px black;
+}
+
+.adminusers {
+  float: right;
+  width: 35%;
+  height: 45%;
+  background-color: #1F1F1F;
+  border-radius: 5px;
+  margin-right: 5%;
+  margin-top: 3%;
+  box-shadow: 0 4px 7px black;
+}
+>>>>>>> aa18d47c11c0fb464cc9575f7029b43514711123
