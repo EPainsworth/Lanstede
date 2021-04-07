@@ -253,7 +253,11 @@ $borderColor: #7E7E7E;
 }
 
 #login-button {
-
+    margin-top: 2%;
+    margin-right: 2%;
+    float:right;
+    font-size: 16px;
+    margin-left: 1%;
 }
 .infoPicture img {
     margin-top: 3%;
@@ -700,6 +704,7 @@ body::-webkit-scrollbar {
     text-align: center;
     width: 100%;
     height: 5%;
+    font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .editinfo button {
@@ -714,6 +719,7 @@ body::-webkit-scrollbar {
 
 .editinfo h2 {
     color: $accentColor;
+    font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .editpicture button {
@@ -728,6 +734,7 @@ body::-webkit-scrollbar {
 
 .editpicture h2 {
     color: $accentColor;
+    font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .adminfood {
@@ -755,9 +762,21 @@ body::-webkit-scrollbar {
     float: left;
     color: $textColor;
     margin-left: 5%;
+    font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 .userid h3 {
     float: left;
     color: $textColor;
-    margin-left: 10%;
+    margin-left: 5%;
+    font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
+
+//infopageedit
+
+.editinput input{
+    width: 50%;
+    height: 20%;
+
+}
+
+

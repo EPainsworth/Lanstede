@@ -42,11 +42,13 @@ Route::get('/edition3', function () {
 Route::get('/adminpage', function () {
     return view('admin/adminpage');
 });
+Route::get('/edit', function () {
+    return view('admin/adminpage');
+});
 Route::get('/inloggen/azure', [\App\Http\Controllers\Auth\LoginController::class, 'redirectToProvider'])->name('login');
 Route::get('/inloggen/azure/callback', [\App\Http\Controllers\Auth\LoginController::class, 'handleProviderCallback']);
 Route::get('detail/{id}', [\App\Http\Controllers\GamesController::class, 'show']);
-Route::get('information/{id}', [\App\Http\Controllers\GamesController::class, 'show']);
-Route::get('edit/{id}', [\App\Http\Controllers\GamesController::class, 'edit']);
+Route::get('edit/', [\App\Http\Controllers\InformationController::class, 'edit']);
 
 Route::resource('/games', \App\Http\Controllers\GamesController::class);
 Route::resource('/information', \App\Http\Controllers\InformationController::class);
