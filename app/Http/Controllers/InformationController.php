@@ -43,7 +43,10 @@ class InformationController extends Controller
 
     public function update(Request $request)
     {
-
+        $data= Information::find($request->id);
+        $data->text=$request->text;
+        $data->save();
+        return redirect('update');
     }
 
 
