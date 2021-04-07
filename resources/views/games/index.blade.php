@@ -1,4 +1,4 @@
-@extends('pages.allgamespage')
+@extends('games.allgamespage')
 
 @section('content')
     <link rel="stylesheet" href="{{asset('css/app.css')}}">

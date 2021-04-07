@@ -15,9 +15,12 @@
             </div>
         </div>
 
-        <a href="infopage" id="information-button">INFORMATION</a>
+        <a href="information" id="information-button">INFORMATION</a>
 
-        <a href="food" id="profile-button">PROFILE</a>
+
+        <a href="profilepage" id="profile-button">PROFILE</a>
+
+        <img src="{{asset('assets/profiel.jpg')}}" id="profilepicture">
     </div>
 </header>
 

@@ -14,7 +14,7 @@
         </div>
     </div>
 
-    <a href="infopage" id="information-button">INFORMATION</a>
+    <a href="information" id="information-button">INFORMATION</a>
 
     <a href="profilepage" id="profile-button">PROFILE</a>
 
