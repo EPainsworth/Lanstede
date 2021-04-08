@@ -46,7 +46,7 @@ class InformationController extends Controller
         $data= Information::find($request->id);
         $data->text=$request->text;
         $data->save();
-        return redirect('update');
+        return redirect('information');
     }
 
 

@@ -14,7 +14,7 @@
     <form action="/update" method="POST" class="editinput"><br>
         @csrf
         <input type="hidden" name="id" value="{{$data['id']}}">
-        <input type="text" name="name"  value="{{$data['text']}}">
+        <input type="text" name="text"  value="{{$data['text']}}">
         <br><br><button type="submit">Update</button>
     </form>
 </center>

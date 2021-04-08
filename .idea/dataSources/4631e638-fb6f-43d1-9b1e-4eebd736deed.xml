@@ -3945,7 +3945,6 @@ SELECT|sys.sys_config
     <column id="937" parent="298" name="text">
       <Position>2</Position>
       <DataType>longtext|0s</DataType>
-      <NotNull>1</NotNull>
     </column>
     <key id="938" parent="298" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
