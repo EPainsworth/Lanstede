@@ -51,7 +51,8 @@ Route::post('update/', [\App\Http\Controllers\InformationController::class, 'upd
 
 Route::resource('/games', \App\Http\Controllers\GamesController::class);
 Route::resource('/information', \App\Http\Controllers\InformationController::class);
-Route::resource('/food', \App\Http\Controllers\FoodController::class);
+Route::get('/inschrijven', [\App\Http\Controllers\InschrijvenController::class, 'index']);
+Route::post('/inschrijven', [\App\Http\Controllers\InschrijvenController::class, 'register']);
 Route::resource('/admin', \App\Http\Controllers\Auth\LoginController::class);
 
 

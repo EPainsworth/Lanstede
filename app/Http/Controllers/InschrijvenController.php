@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Food;
+use App\Models\Inschrijven;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class InschrijvenController extends Controller
 {
@@ -13,9 +16,19 @@ class InschrijvenController extends Controller
      */
     public function index()
     {
-        //
+        return view('pages.orderpage', [
+            'food' => Food::all()
+        ]);
     }
 
+    public function register(Request $request)
+    {
+        $inschrijving = new Inschrijven();
+        $inschrijving->food_id = $request->get('snack');
+        $inschrijving->id = Auth::id();
+        $inschrijving->save();
+        return redirect('/');
+    }
     /**
      * Show the form for creating a new resource.
      *

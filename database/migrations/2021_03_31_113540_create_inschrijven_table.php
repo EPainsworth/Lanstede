@@ -14,8 +14,10 @@ class CreateInschrijvenTable extends Migration
     public function up()
     {
         Schema::create('inschrijven', function (Blueprint $table) {
-            $table->foreignId('id');
-            $table->foreignId('food_id');
+            $table->unsignedBigInteger('id');
+            $table->foreign('id')->references('id')->on('users');
+            $table->unsignedBigInteger('food_id');
+            $table->foreign('food_id')->references('food_id')->on('food');
             $table->timestamps();
         });
     }

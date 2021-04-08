@@ -2,7 +2,8 @@
     <h1>YOU ARE LOGGED IN!</h1>
     <hr class="solid">
     <h2>CHOOSE YOUR FOOD</h2>
-<form method="GET" action="/">
+<form method="post">
+    @csrf
     <div class="dropDownButton">
         <select name="snack">
             <option value="0" selected>Choose your food:</option>
