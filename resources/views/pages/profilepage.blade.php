@@ -14,10 +14,10 @@
         <img id="profilePlaceholder" src="{{asset('assets/csgo_bannerfoto1.png')}}" alt="x">
     </div>
     <div id="profile-name">
-        naam input
+        {{Auth::user()->name}}
     </div>
     <div id="profile-email">
-        email
+        {{Auth::user()->email}}
     </div>
 </div>
 @include('layouts.footerprofile')

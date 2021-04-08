@@ -49,7 +49,7 @@ class LoginController extends Controller
 
         Auth::login($user, true);
 
-        return redirect()->route('index');
+        return redirect('/inschrijven');
     }
     public function index()
     {
