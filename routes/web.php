@@ -24,6 +24,9 @@ Route::get('/infopage', function () {
 Route::get('/allgamespage', function () {
     return view('pages/AllGamesPage');
 });
+Route::get('/gamedetail', function () {
+    return view('pages/gamedetail');
+});
 Route::get('/profilepage', function () {
     return view('pages/ProfilePage');
 });

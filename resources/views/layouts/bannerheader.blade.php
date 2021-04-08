@@ -31,7 +31,6 @@
         @endguest
     </div>
 </header>
-
 <script>
     window.addEventListener('scroll', function () {
         let header = document.querySelector('header');
