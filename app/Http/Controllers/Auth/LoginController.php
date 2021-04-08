@@ -51,4 +51,10 @@ class LoginController extends Controller
 
         return redirect()->route('index');
     }
+    public function index()
+    {
+        return view('admin.index',[
+            'user' => User::all()
+        ]);
+    }
 }

@@ -12,7 +12,7 @@
         <h1>AdminPage Dashboard</h1>
     </div>
     <div class="editinfo">
-        <a><button><h2>Edit Information</h2></button></a>
+        <a href="edit"><button><h2>Edit Information</h2></button></a>
     </div>
     <div class="editpicture">
         <a><button><h2>Edit FotoPage</h2></button></a>
@@ -22,5 +22,6 @@
 <div class="adminfood">
 </div>
 <div class="adminusers">
+    @yield('useremail')
 </div>
 </body>

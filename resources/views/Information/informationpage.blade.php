@@ -13,7 +13,7 @@
     <img src="{{asset('assets/csgo_infopage.png')}}" alt="Error loading image">
 </div>
 <center>
-@include('Information.info')
+    @include('Information.info')
 </center>
 @include('layouts.footer')
 </body>
