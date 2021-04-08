@@ -14,11 +14,13 @@ class CreateGamesinschrijvingTable extends Migration
     public function up()
     {
         Schema::create('gamesinschrijving', function (Blueprint $table) {
-            $table->foreignId('game_id');
-            $table->foreignId('id');
-        });
-    }
+            $table->unsignedBigInteger('game_id');
+            $table->foreign('game_id')->references('id')->on('games');
+            $table->unsignedBigInteger('id');
+            $table->foreign('id')->references('id')->on('users');
 
+    });
+    }
     /**
      * Reverse the migrations.
      *

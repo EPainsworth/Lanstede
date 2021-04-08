@@ -2,7 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Games;
+use App\Models\GamesInschrijvingModel;
+use App\Models\Inschrijven;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class GamesInschrijvingController extends Controller
 {
@@ -13,9 +17,18 @@ class GamesInschrijvingController extends Controller
      */
     public function index()
     {
-        //
+        return view('games.index', [
+            'games' => Games::all()
+        ]);
     }
-
+    public function register(Request $request)
+    {
+        $gamesinschrijving = new GamesInschrijvingModel();
+        $gamesinschrijving->game_id = $request->get('game');
+        $gamesinschrijving->id = Auth::id();
+        $gamesinschrijving->save();
+        return redirect('/');
+    }
     /**
      * Show the form for creating a new resource.
      *

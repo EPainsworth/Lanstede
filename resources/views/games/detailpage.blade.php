@@ -11,8 +11,14 @@
 @include('layouts.bannerheader')
 <div class="detailbanner">
     <img id="pictureplace" src="{{asset('assets/rustsss.jpg')}}" alt="x">
-    <button class="join_btn" onclick="location.href='https://public.test/'" type="button">
-        Join</button>
+    <form method="post">
+
+        @csrf
+        <input type="hidden" name="game" value="{{$data['id']}}">
+        <button class="join_btn" type="submit" >
+            Join</button>
+    </form>
+
 </div>
 <div class="gamedetail">
     <div class="detailpictureBorder">

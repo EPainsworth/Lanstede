@@ -56,6 +56,7 @@ Route::resource('/games', \App\Http\Controllers\GamesController::class);
 Route::resource('/information', \App\Http\Controllers\InformationController::class);
 Route::get('/inschrijven', [\App\Http\Controllers\InschrijvenController::class, 'index']);
 Route::post('/inschrijven', [\App\Http\Controllers\InschrijvenController::class, 'register']);
+Route::post('/detail/{id}', [\App\Http\Controllers\GamesInschrijvingController::class, 'register']);
 Route::resource('/admin', \App\Http\Controllers\Auth\LoginController::class);
 
 
