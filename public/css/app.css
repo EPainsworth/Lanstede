@@ -213,31 +213,14 @@
 }
 .videoBackground .orderContainer .dropDownButton {
   color: #121212;
-  float: right;
-  margin-right: 20%;
+  margin-left: 35%;
   margin-top: 15%;
 }
 .videoBackground .orderContainer .dropDownButton select {
   background-color: #1F1F1F;
   color: #FF5F1F;
   border-radius: 5px;
-  width: 23vh;
-  height: 10%;
-  border: solid 1px #FF5F1F;
-  font-size: 16px;
-  font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-}
-.videoBackground .orderContainer .dropDownButton2 {
-  float: left;
-  margin-left: 20%;
-  margin-top: 15%;
-  color: #121212;
-}
-.videoBackground .orderContainer .dropDownButton2 select {
-  background-color: #1F1F1F;
-  color: #FF5F1F;
-  border-radius: 5px;
-  width: 23vh;
+  width: 45%;
   height: 10%;
   border: solid 1px #FF5F1F;
   font-size: 16px;
@@ -603,13 +586,13 @@ body::-webkit-scrollbar {
   background-color: black;
   margin-left: 20%;
   z-index: -1;
-  opacity: 0.9;
+  opacity: 0.95;
 }
 .profileContainer .profileBorder {
   width: 20%;
   height: 37%;
   background-color: transparent;
-  border: solid 2px #03DAC6;
+  border: solid 2px #BEBEBE;
   margin-left: 5%;
   margin-top: 10%;
   position: absolute;
@@ -626,6 +609,7 @@ body::-webkit-scrollbar {
   position: absolute;
   margin-top: 8%;
   margin-left: 5%;
+  font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 #profile-email {
@@ -633,6 +617,7 @@ body::-webkit-scrollbar {
   position: absolute;
   margin-top: 15%;
   margin-left: 35%;
+  font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .profile-background {
@@ -933,4 +918,51 @@ body::-webkit-scrollbar {
 .editinput input {
   width: 50%;
   height: 5%;
+}
+
+.picturecontainer {
+  margin-top: 15%;
+  width: 20%;
+  height: 40%;
+  float: left;
+  border-bottom: 70px solid white;
+  border-right: 15px solid white;
+  border-left: 15px solid white;
+  border-top: 15px solid white;
+  margin-left: 15%;
+  transform: rotate(-20deg);
+  box-shadow: 3px 10px 10px black;
+  position: relative;
+  z-index: 2;
+}
+
+.picturecontainer2 {
+  margin-top: 10%;
+  width: 20%;
+  height: 40%;
+  float: left;
+  border-bottom: 70px solid white;
+  border-right: 15px solid white;
+  border-left: 15px solid white;
+  border-top: 15px solid white;
+  margin-left: 1.5%;
+  box-shadow: 3px 10px 10px black;
+  position: relative;
+  z-index: 1;
+}
+
+.picturecontainer3 {
+  margin-top: 13%;
+  width: 20%;
+  height: 40%;
+  float: left;
+  border-bottom: 70px solid white;
+  border-right: 15px solid white;
+  border-left: 15px solid white;
+  border-top: 15px solid white;
+  margin-left: 1.5%;
+  transform: rotate(20deg);
+  box-shadow: 3px 10px 10px black;
+  position: relative;
+  z-index: -1;
 }

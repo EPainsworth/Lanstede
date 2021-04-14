@@ -34,13 +34,13 @@ Route::get('/orderpage', function () {
     return view('pages/OrderPage');
 });
 Route::get('/edition1', function () {
-    return view('pages/PictureEdition1');
+    return view('pictures/PictureEdition1');
 });
 Route::get('/edition2', function () {
-    return view('pages/PictureEdition2');
+    return view('pictures/PictureEdition2');
 });
 Route::get('/edition3', function () {
-    return view('pages/PictureEdition3');
+    return view('pictures/PictureEdition3');
 });
 Route::get('/adminpage', function () {
     return view('admin/adminpage');

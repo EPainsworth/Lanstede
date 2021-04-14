@@ -5,9 +5,12 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
-    <title>Edition1</title>
+    <title>Edition3</title>
 </head>
 <body class="background">
+<div class="picturecontainer"></div>
+<div class="picturecontainer2"></div>
+<div class="picturecontainer3"></div>
 @include('layouts.header')
 </body>
 <script>

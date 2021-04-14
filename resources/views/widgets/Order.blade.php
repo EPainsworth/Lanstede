@@ -16,7 +16,7 @@
         </select>
     </div>
     <div class="orderSumbit">
-        <input type="submit" name="Submit" >
+        <input type="submit" name="Submit" value="Sumbit" >
     </div>
 </form>
 </div>

@@ -8,6 +8,9 @@
     <title>Edition2</title>
 </head>
 <body class="background">
+<div class="picturecontainer"></div>
+<div class="picturecontainer2"></div>
+<div class="picturecontainer3"></div>
 @include('layouts.header')
 </body>
 <script>
