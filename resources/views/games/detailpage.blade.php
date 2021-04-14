@@ -10,8 +10,8 @@
 <body class="detailpagebody">
 @include('layouts.bannerheader')
 <div class="detailbanner">
-    <img id="pictureplace" src="{{asset('assets/rustsss.jpg')}}" alt="x">
-    <form method="post">
+    <img id="pictureplace" src="{{asset('assets/backgroundprofile.jpg')}}" alt="x">
+    <form method="post" class="hiddeninput">
 
         @csrf
         <input type="hidden" name="game" value="{{$data['id']}}">

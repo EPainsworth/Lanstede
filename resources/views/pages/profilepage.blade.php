@@ -11,7 +11,7 @@
 @include('layouts.header')
 <div class="profileContainer">
     <div class="profileBorder">
-        <img id="profilePlaceholder" src="{{asset('assets/csgo_bannerfoto1.png')}}" alt="x">
+        <img id="profilePlaceholder" src="{{asset('assets/profiel.jpg')}}" alt="x">
     </div>
     <div id="profile-name">
         {{Auth::user()->name}}
@@ -20,7 +20,7 @@
         {{Auth::user()->email}}
     </div>
 </div>
-@include('layouts.footerprofile')
+
 </body>
 <script>
     $(document).ready(function(){
