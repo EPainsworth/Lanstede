@@ -52,6 +52,9 @@ Route::get('detail/{id}', [\App\Http\Controllers\GamesController::class, 'show']
 Route::get('edit/', [\App\Http\Controllers\InformationController::class, 'edit']);
 Route::post('update/', [\App\Http\Controllers\InformationController::class, 'update']);
 
+Route::get('/edition1', [\App\Http\Controllers\PicturesController::class, 'picture1']);
+Route::get('/edition2', [\App\Http\Controllers\PicturesController::class, 'picture2']);
+Route::get('/edition3', [\App\Http\Controllers\PicturesController::class, 'picture3']);
 Route::resource('/games', \App\Http\Controllers\GamesController::class);
 Route::resource('/information', \App\Http\Controllers\InformationController::class);
 Route::get('/inschrijven', [\App\Http\Controllers\InschrijvenController::class, 'index']);

@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d85731b-b961-438d-8ba7-c6d31ce6ef69" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/pictures/pictureedition1.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/pictures/pictureedition2.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/pictures/pictureedition3.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PicturesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PicturesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/PicturesModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Pictures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_24_125843_create_pictures_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_03_24_125843_create_pictures_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/PictureEdition1.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/PictureEdition2.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/PictureEdition3.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/widgets/Order.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/widgets/Order.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/bannerheader.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/bannerheader.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pictures/pictureedition1.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pictures/pictureedition1.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pictures/pictureedition2.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pictures/pictureedition2.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pictures/pictureedition3.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pictures/pictureedition3.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -225,7 +225,8 @@
       <workItem from="1617955236980" duration="263000" />
       <workItem from="1618209530936" duration="1674000" />
       <workItem from="1618296522626" duration="1971000" />
-      <workItem from="1618383308186" duration="4269000" />
+      <workItem from="1618383308186" duration="7449000" />
+      <workItem from="1618400150295" duration="7983000" />
     </task>
     <servers />
   </component>

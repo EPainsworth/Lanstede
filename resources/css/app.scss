@@ -791,6 +791,12 @@ body::-webkit-scrollbar {
     position: relative;
     z-index: 2;
 }
+
+.picturecontainer img {
+    width: 100%;
+    height: 100%;
+}
+
 .picturecontainer2 {
     margin-top: 10%;
     width: 20%;
@@ -805,6 +811,12 @@ body::-webkit-scrollbar {
     position: relative;
     z-index: 1;
 }
+
+.picturecontainer2 img {
+    width: 100%;
+    height: 100%;
+}
+
 .picturecontainer3 {
     margin-top: 13%;
     width: 20%;
@@ -819,6 +831,10 @@ body::-webkit-scrollbar {
     box-shadow: 3px 10px 10px rgba(0, 0, 0, 1);
     position: relative;
     z-index: -1;
+}
+.picturecontainer3 img {
+    width: 100%;
+    height: 100%;
 }
 
 

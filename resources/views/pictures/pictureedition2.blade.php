@@ -8,9 +8,15 @@
     <title>Edition2</title>
 </head>
 <body class="background">
-<div class="picturecontainer"></div>
-<div class="picturecontainer2"></div>
-<div class="picturecontainer3"></div>
+<div class="picturecontainer">
+    <img class="pic4" src="{{$pics4->picture_pics}}" alt="X">
+</div>
+<div class="picturecontainer2">
+    <img class="pic5" src="{{$pics5->picture_pics}}" alt="X">
+</div>
+<div class="picturecontainer3">
+{{--    <img class="pic6" src="{{$pics6->picture_pics}}" alt="X">--}}
+</div>
 @include('layouts.header')
 </body>
 <script>
