@@ -718,36 +718,10 @@ body::-webkit-scrollbar {
     font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-.editpicture button {
-    margin-top: 10%;
-    margin-left: 15%;
-    border: 1px solid $accentColor;
-    background-color: $secondButtonColor;
-    width: 70%;
-    height: 15%;
-    border-radius: 5px;
-}
-
-.editpicture h2 {
-    color: $accentColor;
-    font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-}
-
-.adminfood {
-    float: right;
-    width: 35%;
-    height: 30%;
-    background-color: $secondButtonColor;
-    border-radius: 5px;
-    margin-right: 5%;
-    margin-top: 5%;
-    box-shadow: 0 4px 7px rgba(0, 0, 0, 1);
-}
-
 .adminusers {
     float: right;
     width: 35%;
-    height: 45%;
+    height: 85%;
     background-color: $secondButtonColor;
     border-radius: 5px;
     margin-right: 5%;

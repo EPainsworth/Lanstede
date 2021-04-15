@@ -10,7 +10,7 @@
 <body class="detailpagebody">
 @include('layouts.bannerheader')
 <div class="detailbanner">
-    <img id="pictureplace" src="{{asset('assets/backgroundprofile.jpg')}}" alt="x">
+    <img id="pictureplace" src="{{asset('assets/gamebanner.png')}}" alt="x">
     <form method="post" class="hiddeninput">
 
         @csrf

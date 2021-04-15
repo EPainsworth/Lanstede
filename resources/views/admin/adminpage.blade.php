@@ -14,13 +14,8 @@
     <div class="editinfo">
         <a href="edit"><button><h2>Edit Information</h2></button></a>
     </div>
-    <div class="editpicture">
-        <a><button><h2>Edit FotoPage</h2></button></a>
-    </div>
 </div>
 
-<div class="adminfood">
-</div>
 <div class="adminusers">
     @yield('useremail')
 </div>
