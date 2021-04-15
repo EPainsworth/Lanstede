@@ -814,5 +814,18 @@ body::-webkit-scrollbar {
 .hiddeninput{
     z-index: -1;
 }
+.editpic button {
+    margin-top: 10%;
+    margin-left: 15%;
+    border: 1px solid $accentColor;
+    background-color: $secondButtonColor;
+    width: 70%;
+    height: 15%;
+    border-radius: 5px;
+}
 
+.editpic h2 {
+    color: $accentColor;
+    font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
 

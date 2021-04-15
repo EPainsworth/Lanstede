@@ -14,6 +14,9 @@
     <div class="editinfo">
         <a href="edit"><button><h2>Edit Information</h2></button></a>
     </div>
+    <div class="editpic">
+        <a href="pictureedit"><button><h2>Edit Pictures</h2></button></a>
+    </div>
 </div>
 
 <div class="adminusers">
