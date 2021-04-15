@@ -9,10 +9,10 @@
 </head>
 <body class="background">
 <div class="picturecontainer">
-    <img class="pic4" src="{{$pics4->picture_pics}}" alt="X">
+    <img class="pic4" src="{{$pics4->pics}}" alt="X">
 </div>
 <div class="picturecontainer2">
-    <img class="pic5" src="{{$pics5->picture_pics}}" alt="X">
+    <img class="pic5" src="{{$pics5->pics}}" alt="X">
 </div>
 <div class="picturecontainer3">
 {{--    <img class="pic6" src="{{$pics6->picture_pics}}" alt="X">--}}

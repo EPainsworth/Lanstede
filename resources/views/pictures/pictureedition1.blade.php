@@ -10,10 +10,10 @@
 <body class="background">
 @include('layouts.header')
 <div class="picturecontainer">
-    <img class="pic1" src="{{$pics1->picture_pics}}" alt="X">
+    <img class="pic1" src="{{$pics1->pics}}" alt="X">
 </div>
 <div class="picturecontainer2">
-    <img class="pic2" src="{{$pics2->picture_pics}}" alt="X">
+    <img class="pic2" src="{{$pics2->pics}}" alt="X">
 </div>
 <div class="picturecontainer3">
 {{--    <img class="pic3" src="{{$pics3->picture_pics}}" alt="X">--}}
