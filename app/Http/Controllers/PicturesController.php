@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Food;
+use App\Models\Information;
 use App\Models\Pictures;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -28,16 +29,16 @@ class PicturesController extends Controller
     }
     public function picture2()
     {
-        $pic4 = DB::table('pictures')->where('picture_id', '4')->first();
-        $pic5 = DB::table('pictures')->where('picture_id', '5')->first();
-        $pic6 = DB::table('pictures')->where('picture_id', '6')->first();
+        $pic4 = DB::table('pictures')->where('id', '4')->first();
+        $pic5 = DB::table('pictures')->where('id', '5')->first();
+        $pic6 = DB::table('pictures')->where('id', '6')->first();
         return view('pictures.pictureedition1', ['pics1'=>$pic4], ['pics2'=>$pic5]);
     }
     public function picture3()
     {
-        $pic7 = DB::table('pictures')->where('picture_id', '7')->first();
-        $pic8 = DB::table('pictures')->where('picture_id', '8')->first();
-        $pic9 = DB::table('pictures')->where('picture_id', '9')->first();
+        $pic7 = DB::table('pictures')->where('id', '7')->first();
+        $pic8 = DB::table('pictures')->where('id', '8')->first();
+        $pic9 = DB::table('pictures')->where('id', '9')->first();
         return view('pictures.pictureedition1', ['pics1'=>$pic7], ['pics2'=>$pic8]);
     }
 
@@ -46,11 +47,6 @@ class PicturesController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
-        //
-    }
-
     /**
      * Store a newly created resource in storage.
      *
@@ -68,9 +64,10 @@ class PicturesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show()
     {
-        //
+        $data=Pictures::all();
+        return view('pictures/pictureedit',['pictures'=>$data]);
     }
 
     /**
@@ -81,7 +78,8 @@ class PicturesController extends Controller
      */
     public function edit($id)
     {
-        //
+        $data= Pictures::find($id);
+        return view('pictures/editpic', ['data'=>$data]);
     }
 
     /**
@@ -91,9 +89,12 @@ class PicturesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
-        //
+        $data= Pictures::find($request->id);
+        $data->pics=$request->pics;
+        $data->save();
+        return redirect('pictureedit');
     }
 
     /**

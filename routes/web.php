@@ -49,12 +49,17 @@ Route::get('/adminpage', function () {
 Route::get('/inloggen/azure', [\App\Http\Controllers\Auth\LoginController::class, 'redirectToProvider'])->name('login');
 Route::get('/inloggen/azure/callback', [\App\Http\Controllers\Auth\LoginController::class, 'handleProviderCallback']);
 Route::get('detail/{id}', [\App\Http\Controllers\GamesController::class, 'show']);
+
+Route::get('editpic/{id}', [\App\Http\Controllers\PicturesController::class, 'edit']);
+Route::post('editpic/', [\App\Http\Controllers\PicturesController::class, 'update']);
+
 Route::get('edit/', [\App\Http\Controllers\InformationController::class, 'edit']);
 Route::post('update/', [\App\Http\Controllers\InformationController::class, 'update']);
 
 Route::get('/edition1', [\App\Http\Controllers\PicturesController::class, 'picture1']);
 Route::get('/edition2', [\App\Http\Controllers\PicturesController::class, 'picture2']);
 Route::get('/edition3', [\App\Http\Controllers\PicturesController::class, 'picture3']);
+Route::get('/pictureedit',[\App\Http\Controllers\PicturesController::class, 'show']);
 Route::resource('/games', \App\Http\Controllers\GamesController::class);
 Route::resource('/information', \App\Http\Controllers\InformationController::class);
 Route::get('/inschrijven', [\App\Http\Controllers\InschrijvenController::class, 'index']);

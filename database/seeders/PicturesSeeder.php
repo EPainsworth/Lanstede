@@ -16,31 +16,31 @@ class PicturesSeeder extends Seeder
     {
         DB::table('pictures')->insert([
             [
-                'picture_pics' => 'https://gyazo.com/a9c543bd13d867a14d559585c87c042d.png',
+                'pics' => 'https://gyazo.com/a9c543bd13d867a14d559585c87c042d.png',
             ],
             [
-                'picture_pics' => 'https://gyazo.com/a9c543bd13d867a14d559585c87c042d.png',
+                'pics' => 'https://gyazo.com/a9c543bd13d867a14d559585c87c042d.png',
             ],
             [
-                'picture_pics' => 'https://gyazo.com/a9c543bd13d867a14d559585c87c042d.png',
+                'pics' => 'https://gyazo.com/a9c543bd13d867a14d559585c87c042d.png',
             ],
             [
-                'picture_pics' => 'https://gyazo.com/a9c543bd13d867a14d559585c87c042d.png',
+                'pics' => 'https://gyazo.com/a9c543bd13d867a14d559585c87c042d.png',
             ],
             [
-                'picture_pics' => 'https://gyazo.com/a9c543bd13d867a14d559585c87c042d.png',
+                'pics' => 'https://gyazo.com/a9c543bd13d867a14d559585c87c042d.png',
             ],
             [
-                'picture_pics' => 'https://gyazo.com/a9c543bd13d867a14d559585c87c042d.png',
+                'pics' => 'https://gyazo.com/a9c543bd13d867a14d559585c87c042d.png',
             ],
             [
-                'picture_pics' => 'https://gyazo.com/a9c543bd13d867a14d559585c87c042d.png',
+                'pics' => 'https://gyazo.com/a9c543bd13d867a14d559585c87c042d.png',
             ],
             [
-                'picture_pics' => 'https://gyazo.com/a9c543bd13d867a14d559585c87c042d.png',
+                'pics' => 'https://gyazo.com/a9c543bd13d867a14d559585c87c042d.png',
             ],
             [
-                'picture_pics' => 'https://gyazo.com/a9c543bd13d867a14d559585c87c042d.png',
+                'pics' => 'https://gyazo.com/a9c543bd13d867a14d559585c87c042d.png',
             ],
         ],
         );
